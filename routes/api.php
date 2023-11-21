@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return (' I am a message from api route');
 // });
 Route::get('student',[StudentController::class, 'index']);
+Route::delete('student/delete/{id}',[StudentController::class, 'delete']);
